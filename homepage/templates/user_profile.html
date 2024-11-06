@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    UoA DHPA Database Project
+{% endblock %}
+
+{% block content %}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User Profile</title>
+        <style>
+            .text-center {
+                text-align: center;
+            }
+            .profile-info {
+                margin-top: 20px;
+            }
+        </style>
+
+    </head>
+
+    <body class="text-center"> 
+    <h1>User Profile</h1>
+    <p class="profile-info">Welcome, {{ user.username }}!</p>
+    <p class="profile-info">Email: {{ user.email }}</p>
+
+    <a href="{% url 'homepage:home' %}" class="btn btn-primary mt-3 mb-4">Return to Home</a> 
+    </body>  </body>
+{% endblock %}
