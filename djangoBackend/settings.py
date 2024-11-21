@@ -26,7 +26,12 @@ SECRET_KEY = 'django-insecure-$*v)$#m0quhzl5kpk6-ri9a!z84=-4yvr30+!=cj1=03o&3f^)
 DEBUG = True
 ALLOWED_HOSTS = ['sbx-hotel-srv1.abdn.ac.uk', '*', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://localhost', 'https://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = [
+    'https://sbx-hotel-srv1.abdn.ac.uk',
+    'http://137.50.202.150',
+    'http://localhost',
+    'http://127.0.0.1',
+]
 
 # Application definition
 
