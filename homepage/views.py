@@ -1270,7 +1270,7 @@ def error_400(request):
 
 def error_403(request,exception):
     data = {'status_code': 403, 'error_message': 'Permission denied'}
-    return render(request, 'error_page.html', data, status=404)
+    return render(request, 'error_page.html', data, status=403)
 
 
 def error_404(request, exception):
