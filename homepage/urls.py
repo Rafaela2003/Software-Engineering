@@ -5,8 +5,6 @@ from django.conf.urls.static import static
 from . import views
 
 app_name = "homepage"
-handler500 = views.error_500
-handler404 = views.error_404
 
 urlpatterns = [
                   path('', views.home, name='home'),
