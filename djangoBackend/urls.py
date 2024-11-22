@@ -19,7 +19,7 @@ from django.urls import path, include
 from homepage import views
 from django.conf.urls import handler404, handler500, handler400, handler403
 
-handler403 = views.error_400
+handler400 = views.error_400 
 handler403 = views.error_403
 handler404 = views.error_404
 handler500 = views.error_500
