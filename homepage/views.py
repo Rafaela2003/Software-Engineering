@@ -1263,9 +1263,9 @@ def send_email(subject, message, uploader_email, attachment_file=None):
         print(f"An error occurred while sending the email: {e}")
 
 
-def error_400(request):
+def error_400(request, exception):
     data = {'status_code': 400, 'error_message': 'bad request'}
-    return render(request, 'error_page.html', data, status=404)
+    return render(request, 'error_page.html', data, status=400)
 
 
 def error_403(request,exception):
